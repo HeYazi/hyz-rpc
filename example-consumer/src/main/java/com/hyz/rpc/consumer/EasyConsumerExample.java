@@ -21,10 +21,13 @@ public class EasyConsumerExample {
         User user = new User();
         user.setName("hyz");
         User result = userService.getUser(user);
+        short number = userService.getNumber();
+        System.out.println(number);
         if (ObjectUtils.isEmpty(result)) {
             System.out.println("user == null");
             return;
         }
         System.out.println(result.getName());
+
     }
 }

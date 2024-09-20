@@ -17,4 +17,8 @@ public interface UserService {
      * @return {@link User }
      */
     User getUser(User user);
+
+    default short getNumber() {
+        return 1;
+    }
 }
